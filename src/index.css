@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 200 20% 4%;
+  --foreground: 190 20% 96%;
+  --card: 200 24% 7%;
+  --card-foreground: 190 20% 96%;
+  --primary: 186 73% 38%;
+  --primary-foreground: 190 20% 96%;
+  --secondary: 192 24% 12%;
+  --secondary-foreground: 190 20% 96%;
+  --muted: 194 22% 12%;
+  --muted-foreground: 193 16% 64%;
+  --accent: 186 73% 38%;
+  --accent-foreground: 190 20% 96%;
+  --border: 191 30% 14%;
+  --input: 191 30% 14%;
+  --ring: 186 73% 38%;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-bg text-foreground antialiased;
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(34, 184, 201, 0.14), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(26, 155, 170, 0.11), transparent 40%);
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+}
