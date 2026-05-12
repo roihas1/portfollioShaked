@@ -12,14 +12,16 @@ export function Results() {
     <SectionWrapper id="results" className="space-y-8">
       <div className="max-w-2xl">
         <p className="text-sm uppercase tracking-[0.2em] text-brand-light">Case Studies</p>
-        <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Measurable growth for high-performing founders</h2>
+        <h2 className="mt-2 text-pretty text-2xl font-semibold sm:mt-3 sm:text-3xl md:text-5xl">
+          Measurable growth for high-performing founders
+        </h2>
       </div>
-      <div className="grid gap-5 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 lg:grid-cols-3">
         {results.map((item) => (
           <Card key={item.label}>
-            <CardContent className="space-y-5 pt-6">
-              <p className="font-medium">{item.label}</p>
-              <div className="flex items-center justify-between text-sm text-muted-foreground">
+            <CardContent className="space-y-4 px-4 pb-5 pt-5 sm:space-y-5 sm:px-6 sm:pt-6">
+              <p className="font-medium leading-snug">{item.label}</p>
+              <div className="flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
                 <span>Before: {item.before}</span>
                 <span className="text-brand-light">After: {item.after}</span>
               </div>

@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --brand-cream: #f8f5f0;
+  --brand-charcoal: #333333;
   --background: 200 20% 4%;
   --foreground: 190 20% 96%;
   --card: 200 24% 7%;
@@ -26,15 +28,21 @@
 
 html {
   scroll-behavior: smooth;
+  /* Fixed navbar + optional notch: anchor targets stay visible */
+  scroll-padding-top: calc(5rem + env(safe-area-inset-top, 0px));
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  @apply bg-brand-bg text-foreground antialiased;
-  font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  @apply bg-brand-bg font-sans text-foreground antialiased;
+  font-family: "DM Sans", Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
   background-image:
     radial-gradient(circle at 20% 10%, rgba(34, 184, 201, 0.14), transparent 35%),
     radial-gradient(circle at 80% 0%, rgba(26, 155, 170, 0.11), transparent 40%);
   min-width: 320px;
+  overflow-x: clip;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 #root {

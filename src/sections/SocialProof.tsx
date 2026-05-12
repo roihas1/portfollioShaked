@@ -21,18 +21,20 @@ const testimonials = [
 
 export function SocialProof() {
   return (
-    <SectionWrapper id="social-proof" className="space-y-10">
-      <div className="grid gap-4 md:grid-cols-3">
+    <SectionWrapper id="social-proof" className="space-y-8 sm:space-y-10">
+      <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
         {["+12M content impressions", "+250K followers generated", "+500 viral posts created"].map((metric) => (
           <Card key={metric} className="bg-brand-surface/55">
-            <CardContent className="pt-6 text-center text-lg font-semibold text-brand-light">{metric}</CardContent>
+            <CardContent className="px-4 py-5 text-center text-base font-semibold leading-snug text-brand-light sm:px-6 sm:py-6 sm:text-lg">
+              {metric}
+            </CardContent>
           </Card>
         ))}
       </div>
-      <div className="grid gap-5 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 lg:grid-cols-3">
         {testimonials.map((item) => (
           <Card key={item.author}>
-            <CardContent className="space-y-4 pt-6">
+            <CardContent className="space-y-3 px-4 pb-5 pt-5 sm:space-y-4 sm:px-6 sm:pt-6">
               <p className="text-sm leading-relaxed text-muted-foreground">"{item.quote}"</p>
               <p className="text-sm font-medium text-brand-light">{item.author}</p>
             </CardContent>

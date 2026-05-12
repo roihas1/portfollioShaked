@@ -10,17 +10,20 @@ import { Results } from "@/sections/Results"
 import { Services } from "@/sections/Services"
 import { SocialProof } from "@/sections/SocialProof"
 
+/** Toggle to show impressions, testimonials, and case studies again */
+const SHOW_MARKETING_PROOF_SECTIONS = false
+
 function App() {
   return (
     <div className="relative overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
-        <SocialProof />
-        <Services />
-        <Results />
-        <Process />
+        {SHOW_MARKETING_PROOF_SECTIONS ? <SocialProof /> : null}
         <About />
+        <Services />
+        {SHOW_MARKETING_PROOF_SECTIONS ? <Results /> : null}
+        <Process />
         <Pricing />
         <FAQ />
         <FinalCTA />

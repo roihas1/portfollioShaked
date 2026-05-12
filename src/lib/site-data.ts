@@ -1,49 +1,42 @@
-import {
-  BarChart3,
-  BookText,
-  Megaphone,
-  PenSquare,
-  Sparkles,
-  Users,
-} from "lucide-react"
+import { BookText, Compass, PenSquare, Sparkles } from "lucide-react"
+
+/** Message visitors see pre-filled in WhatsApp — change this to whatever you want */
+const whatsAppPrefillMessage =
+  "היי שקד, הגעתי אליך דרך האתר ואשמח לשוחח על שיתוף פעולה."
+
+/** Opens WhatsApp chat for booking and pricing inquiries (includes pre-filled message) */
+export const whatsAppBookingUrl = `https://wa.me/972526691960?text=${encodeURIComponent(whatsAppPrefillMessage)}`
 
 export const navItems = [
+  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Results", href: "#results" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Packages", href: "#pricing" },
+  { label: "Contact", href: "#final-cta" },
 ]
 
 export const services = [
   {
-    title: "Personal Branding",
-    description: "Build clear founder positioning that makes you the obvious authority in your niche.",
-    icon: Sparkles,
+    title: "Strategy & Positioning",
+    description:
+      "Defining your voice, messaging, audience, and the way you want to be perceived online.",
+    icon: Compass,
   },
   {
-    title: "LinkedIn Growth",
-    description: "Strategic thought-leadership content that compounds credibility and inbound opportunities.",
-    icon: BarChart3,
-  },
-  {
-    title: "Content Creation",
-    description: "High-performing multi-platform content calendars tailored to your business goals.",
-    icon: Megaphone,
-  },
-  {
-    title: "Ghostwriting",
-    description: "Premium founder voice development with conversion-focused storytelling that feels authentic.",
+    title: "Founder Content",
+    description:
+      "Creating strategic content for LinkedIn or Instagram that reflects your perspective, experience, and expertise.",
     icon: PenSquare,
   },
   {
-    title: "Social Media Management",
-    description: "End-to-end execution across LinkedIn, Instagram, X, and TikTok for consistent growth.",
-    icon: Users,
+    title: "Content Refinement & Writing",
+    description:
+      "Transforming ideas, notes, or existing content into communication that feels intentional, clear, and authentic.",
+    icon: BookText,
   },
   {
-    title: "Founder Storytelling",
-    description: "Narrative architecture that turns experience into trust, authority, and demand.",
-    icon: BookText,
+    title: "Ongoing Brand Direction",
+    description:
+      "Providing continuous guidance, feedback, and creative support to help your brand stay aligned and consistent over time.",
+    icon: Sparkles,
   },
 ]

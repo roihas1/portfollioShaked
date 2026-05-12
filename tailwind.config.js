@@ -7,12 +7,20 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1.25rem",
+        lg: "1.5rem",
+      },
       screens: {
         "2xl": "1280px",
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['"Playfair Display"', "Georgia", "serif"],
+        sans: ['"DM Sans"', "Inter", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +55,9 @@ export default {
           surface: "#0F1416",
           border: "#1A2B2E",
           muted: "#8BA3A7",
+          cream: "#F8F5F0",
+          charcoal: "#333333",
+          grayMuted: "#666666",
         },
       },
       borderRadius: {

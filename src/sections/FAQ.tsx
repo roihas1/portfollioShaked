@@ -28,12 +28,18 @@ export function FAQ() {
   return (
     <SectionWrapper id="faq">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-center text-3xl font-semibold md:text-5xl">Frequently Asked Questions</h2>
-        <Accordion type="single" collapsible className="mt-8 w-full rounded-2xl border border-brand-border bg-card/70 p-6">
+        <h2 className="text-center text-pretty text-2xl font-semibold sm:text-3xl md:text-5xl">
+          Frequently Asked Questions
+        </h2>
+        <Accordion
+          type="single"
+          collapsible
+          className="mt-6 w-full rounded-2xl border border-brand-border bg-card/70 p-3 sm:mt-8 sm:p-6"
+        >
           {questions.map((item, index) => (
-            <AccordionItem value={`item-${index}`} key={item.question}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
-              <AccordionContent>{item.answer}</AccordionContent>
+            <AccordionItem value={`item-${index}`} key={item.question} className="border-brand-border/80">
+              <AccordionTrigger className="text-sm sm:text-base">{item.question}</AccordionTrigger>
+              <AccordionContent className="text-sm leading-relaxed">{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
