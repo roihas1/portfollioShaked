@@ -6,7 +6,7 @@ import { whatsAppBookingUrl } from "@/lib/site-data"
 
 const tiers = [
   {
-    title: "OPTION 1 — Foundation",
+    title: "Foundation",
     features: [
       "Personal brand strategy session",
       "Positioning & messaging direction",
@@ -16,7 +16,7 @@ const tiers = [
     popular: false,
   },
   {
-    title: "OPTION 2 — Growth",
+    title: "Growth",
     features: [
       "Ongoing strategic direction",
       "8–10 monthly posts",
@@ -26,23 +26,21 @@ const tiers = [
     popular: false,
   },
   {
-    title: "OPTION 3 — Advanced Growth",
+    title: "Advanced Growth",
     features: [
       "Everything in Growth",
       "Custom GEMS AI assistant",
-      "Advanced content optimization",
       "Strategic brand support",
     ],
     popular: true,
   },
   {
-    title: "OPTION 4 — Premium Presence",
+    title: "Premium Presence",
     features: [
       "Everything in Advanced Growth",
       "Conference & event coverage",
       "On-site content creation",
       "Video editing & brand storytelling",
-      "High-touch strategic support",
     ],
     popular: false,
   },

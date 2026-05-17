@@ -22,10 +22,10 @@ export function Hero() {
           <hr className="mt-6 h-px w-16 shrink-0 border-0 bg-brand-teal sm:mt-8" aria-hidden />
 
           <p className="mt-6 text-base font-medium text-brand-teal sm:mt-8 sm:text-lg lg:text-xl">
-            For founders, CEOs &amp; modern businesses.
+            For founders, CEOs.
           </p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-brand-grayMuted sm:mt-4 lg:text-[15px]">
-            Helping founders build authentic digital presence through strategy, positioning and content.
+            Build authentic digital presence for founders through strategy, positioning and content.
           </p>
 
           <a

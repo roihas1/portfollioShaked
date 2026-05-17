@@ -4,15 +4,11 @@ import { SectionWrapper } from "@/layouts/SectionWrapper"
 const questions = [
   {
     question: "Which platforms do you support?",
-    answer: "We support LinkedIn, Instagram, X/Twitter, and TikTok with platform-specific strategy and execution.",
-  },
-  {
-    question: "How does pricing work?",
-    answer: "Every engagement is customized to your goals, output scope, and strategic complexity. We provide tailored proposals.",
+    answer: "We support LinkedIn, Instagram, and TikTok with platform-specific strategy and execution.",
   },
   {
     question: "How involved do I need to be each week?",
-    answer: "Most founders spend 60-90 minutes weekly in strategic review and voice capture sessions.",
+    answer: "Most founders spend up to one hour weekly in strategic review",
   },
   {
     question: "Do you create the content for us?",

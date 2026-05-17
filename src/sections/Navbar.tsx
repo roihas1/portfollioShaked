@@ -45,7 +45,7 @@ export function Navbar() {
             <div className="hidden shrink-0 lg:block">
               <Button asChild size="sm">
                 <a href={whatsAppBookingUrl} target="_blank" rel="noopener noreferrer">
-                  Book a meeting call
+                  Schedule a meeting
                 </a>
               </Button>
             </div>
@@ -88,7 +88,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                 >
-                  Book a meeting call
+                  Schedule a meeting
                 </a>
               </Button>
             </div>

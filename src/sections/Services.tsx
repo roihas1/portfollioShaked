@@ -8,7 +8,7 @@ export function Services() {
     <SectionWrapper id="services">
       <div className="mb-8 max-w-2xl sm:mb-12">
         <p className="text-sm uppercase tracking-[0.2em] text-brand-light">Services</p>
-        <h2 className="mt-2 text-pretty text-2xl font-semibold sm:mt-3 sm:text-3xl md:text-5xl">How We Work?</h2>
+        <h2 className="mt-2 text-pretty text-2xl font-semibold sm:mt-3 sm:text-3xl md:text-5xl">Our Approach</h2>
       </div>
       <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-4">
         {services.map((service, index) => (

@@ -5,7 +5,6 @@ import { Footer } from "@/sections/Footer"
 import { Hero } from "@/sections/Hero"
 import { Navbar } from "@/sections/Navbar"
 import { Pricing } from "@/sections/Pricing"
-import { Process } from "@/sections/Process"
 import { Results } from "@/sections/Results"
 import { Services } from "@/sections/Services"
 import { SocialProof } from "@/sections/SocialProof"
@@ -23,7 +22,6 @@ function App() {
         <About />
         <Services />
         {SHOW_MARKETING_PROOF_SECTIONS ? <Results /> : null}
-        <Process />
         <Pricing />
         <FAQ />
         <FinalCTA />
