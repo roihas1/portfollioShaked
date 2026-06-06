@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
-import heroWorkspace from "@/assets/hero-brand-lab.png"
+import heroDesktop from "@/assets/hero-brand-lab.png"
+import heroMobile from "@/assets/hero-brand-lab-mobile.png"
 
 export function Hero() {
   return (
@@ -44,11 +45,18 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         <img
-          src={heroWorkspace}
+          src={heroMobile}
           alt="Shaked at her branding studio desk, smiling with laptop and design materials."
-          className="absolute inset-0 h-full min-h-full w-full object-cover object-[center_30%] lg:object-[55%_20%]"
+          className="absolute inset-0 h-full min-h-full w-full object-cover object-[center_30%] lg:hidden"
           decoding="async"
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          sizes="100vw"
+        />
+        <img
+          src={heroDesktop}
+          alt="Shaked at her branding studio desk, smiling with laptop and design materials."
+          className="absolute inset-0 hidden h-full min-h-full w-full object-cover object-[55%_20%] lg:block"
+          decoding="async"
+          sizes="50vw"
         />
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-bg/15 via-transparent to-brand-bg/10"
