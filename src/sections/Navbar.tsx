@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 max-w-[100vw] bg-brand-bg/90 backdrop-blur-md supports-[backdrop-filter]:bg-brand-bg/80 lg:bg-transparent lg:backdrop-blur-none supports-[backdrop-filter]:lg:bg-transparent">
       <div className="border-b border-brand-border/80 lg:border-transparent">
         <div className="pt-[env(safe-area-inset-top,0px)]">
-          <nav className="container flex min-h-16 w-full items-center gap-3 sm:gap-4 lg:min-h-20 lg:gap-6">
+          <nav className="page-container flex min-h-16 w-full items-center gap-3 sm:gap-4 lg:min-h-20 lg:gap-6">
             <a
               href="#hero"
               className="flex min-h-11 min-w-0 shrink-0 items-center gap-2 rounded-md py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2 focus-visible:ring-offset-brand-bg"
@@ -66,7 +66,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
-          className="max-h-[min(70vh,calc(100dvh-5rem))] overflow-y-auto overscroll-contain border-b border-brand-border bg-brand-bg/98 px-4 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-2 backdrop-blur-xl lg:hidden"
+          className="max-h-[min(70vh,calc(100dvh-5rem))] overflow-y-auto overscroll-contain border-b border-brand-border bg-brand-bg/98 px-6 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-2 backdrop-blur-xl sm:px-8 md:px-10 lg:hidden"
           id="mobile-nav-panel"
         >
           <div className="flex flex-col gap-1">

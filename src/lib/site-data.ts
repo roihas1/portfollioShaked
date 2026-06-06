@@ -1,11 +1,22 @@
 import { BookText, Compass, PenSquare, Sparkles } from "lucide-react"
 
+const whatsAppPhone = "972526691960"
+
+const buildWhatsAppUrl = (message: string) =>
+  `https://wa.me/${whatsAppPhone}?text=${encodeURIComponent(message)}`
+
 /** Message visitors see pre-filled in WhatsApp — change this to whatever you want */
 const whatsAppPrefillMessage =
   "היי שקד, הגעתי אליך דרך האתר ואשמח לשוחח על שיתוף פעולה."
 
 /** Opens WhatsApp chat for booking and pricing inquiries (includes pre-filled message) */
-export const whatsAppBookingUrl = `https://wa.me/972526691960?text=${encodeURIComponent(whatsAppPrefillMessage)}`
+export const whatsAppBookingUrl = buildWhatsAppUrl(whatsAppPrefillMessage)
+
+/** Opens WhatsApp with a package-specific pricing inquiry message */
+export const whatsAppPricingUrl = (packageName: string) =>
+  buildWhatsAppUrl(
+    `היי שקד, הגעתי אליך דרך האתר ואני מתעניין בחבילה ${packageName}.`
+  )
 
 export const navItems = [
   { label: "About", href: "#about" },

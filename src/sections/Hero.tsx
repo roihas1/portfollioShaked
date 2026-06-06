@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import heroWorkspace from "@/assets/hero-workspace.png"
+import heroWorkspace from "@/assets/hero-brand-lab.png"
 
 export function Hero() {
   return (
@@ -45,8 +45,8 @@ export function Hero() {
       >
         <img
           src={heroWorkspace}
-          alt="Curated workspace with laptop, books, and stationery in warm natural light."
-          className="absolute inset-0 h-full min-h-full w-full object-cover object-[center_40%] sm:object-center"
+          alt="Shaked at her branding studio desk, smiling with laptop and design materials."
+          className="absolute inset-0 h-full min-h-full w-full object-cover object-[center_30%] lg:object-[55%_20%]"
           decoding="async"
           sizes="(max-width: 1024px) 100vw, 50vw"
         />

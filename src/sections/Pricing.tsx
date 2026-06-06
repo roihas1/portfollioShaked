@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionWrapper } from "@/layouts/SectionWrapper"
-import { whatsAppBookingUrl } from "@/lib/site-data"
+import { whatsAppPricingUrl } from "@/lib/site-data"
 
 const tiers = [
   {
@@ -10,7 +10,7 @@ const tiers = [
     features: [
       "Personal brand strategy session",
       "Positioning & messaging direction",
-      "10 LinkedIn posts",
+      "8-10 posts",
       "Content guidance",
     ],
     popular: false,
@@ -80,7 +80,7 @@ export function Pricing() {
                 ))}
               </ul>
               <Button variant={tier.popular ? "default" : "outline"} className="mt-1 w-full min-h-12" asChild>
-                <a href={whatsAppBookingUrl} target="_blank" rel="noopener noreferrer">
+                <a href={whatsAppPricingUrl(tier.title)} target="_blank" rel="noopener noreferrer">
                   Contact for Pricing
                 </a>
               </Button>

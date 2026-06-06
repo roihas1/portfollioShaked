@@ -16,7 +16,7 @@ export function SectionWrapper({ id, className, children }: SectionWrapperProps)
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
-        "container max-w-[100vw] py-12 sm:py-16 md:py-24",
+        "page-container py-12 sm:py-16 md:py-24",
         className,
       )}
     >

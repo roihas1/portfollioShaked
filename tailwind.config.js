@@ -8,9 +8,11 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        sm: "1.25rem",
-        lg: "1.5rem",
+        DEFAULT: "1.5rem",
+        sm: "2rem",
+        md: "2.5rem",
+        lg: "3rem",
+        xl: "4rem",
       },
       screens: {
         "2xl": "1280px",
@@ -51,9 +53,9 @@ export default {
           teal: "#1A9BAA",
           light: "#22B8C9",
           dark: "#0E7A87",
-          bg: "#080B0C",
-          surface: "#0F1416",
-          border: "#1A2B2E",
+          bg: "#F8F5F0",
+          surface: "#F0EDE7",
+          border: "#D9D4CC",
           muted: "#8BA3A7",
           cream: "#F8F5F0",
           charcoal: "#333333",
