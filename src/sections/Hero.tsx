@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import heroWorkspace from "@/assets/hero-workspace.png";
+import { motion } from "framer-motion"
+import heroWorkspace from "@/assets/hero-workspace.png"
 
 export function Hero() {
   return (
@@ -14,18 +14,18 @@ export function Hero() {
         transition={{ duration: 0.55 }}
       >
         <div className="relative z-10 mx-auto flex w-full max-w-xl flex-col lg:mx-0">
-          <h1 className="mt-8 font-serif text-[1.65rem] leading-[1.2] tracking-tight text-brand-charcoal sm:mt-10 sm:text-3xl md:text-[2.35rem] lg:mt-10 lg:text-[2.5rem] xl:text-[2.85rem]">
-            For founders and CEOs ready to elevate their personal brand.
+          <h1 className="mt-8 font-serif text-[1.65rem] leading-[1.15] tracking-tight text-brand-charcoal sm:mt-10 sm:text-3xl md:text-5xl lg:mt-10 lg:text-[2.85rem]">
+            <span className="block font-normal lg:whitespace-nowrap">Building personal brands</span>
+            <span className="mt-2 block font-normal italic">people remember.</span>
           </h1>
 
-          <hr
-            className="mt-6 h-px w-16 shrink-0 border-0 bg-brand-teal sm:mt-8"
-            aria-hidden
-          />
+          <hr className="mt-6 h-px w-16 shrink-0 border-0 bg-brand-teal sm:mt-8" aria-hidden />
 
-          <p className="mt-6 max-w-md text-sm leading-relaxed text-brand-grayMuted sm:mt-8 sm:text-base lg:text-[15px]">
-            We help founders turn their ideas, experience, and perspective into
-            a digital presence people genuinely connect with.
+          <p className="mt-6 text-base font-medium text-brand-teal sm:mt-8 sm:text-lg lg:text-xl">
+            For founders, CEOs.
+          </p>
+          <p className="mt-3 max-w-md text-sm leading-relaxed text-brand-grayMuted sm:mt-4 lg:text-[15px]">
+            Build authentic digital presence for founders through strategy, positioning and content.
           </p>
 
           <a
@@ -38,15 +38,15 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        className="relative flex min-h-[42vh] w-full flex-none sm:min-h-[48vh] md:min-h-[52vh] lg:min-h-[calc(100dvh-5rem)] lg:w-1/2"
+        className="relative flex min-h-[32vh] w-full flex-none sm:min-h-[38vh] lg:min-h-[calc(100dvh-5rem)] lg:w-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         <img
           src={heroWorkspace}
-          alt="Founder at a branding studio desk, writing in a notebook."
-          className="absolute inset-0 h-full min-h-full w-full object-cover object-[50%_28%] sm:object-[50%_32%] md:object-[48%_35%] lg:object-[42%_center] xl:object-[38%_center]"
+          alt="Curated workspace with laptop, books, and stationery in warm natural light."
+          className="absolute inset-0 h-full min-h-full w-full object-cover object-[center_40%] sm:object-center"
           decoding="async"
           sizes="(max-width: 1024px) 100vw, 50vw"
         />
@@ -56,5 +56,5 @@ export function Hero() {
         />
       </motion.div>
     </section>
-  );
+  )
 }
